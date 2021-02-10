@@ -225,7 +225,7 @@ public class BPRelationsService
 			location = bpartnerComposite.extractLocation(Objects::nonNull);
 		}
 		final Optional<BPartnerLocation> result = location;
-		return () -> Check.assumePresent(result, MissingPropertyException.class, "Cannot infer location for source BPartner");
+		return () -> Check.assumePresent(result, MissingPropertyException.class, "Cannot infer location for target BPartner");
 	}
 
 }
